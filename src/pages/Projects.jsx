@@ -46,64 +46,60 @@ const projects = [
     imageUrl: "https://i.ibb.co.com/Wn8FmWG/cakrabudaya.png",
     githubUrl: "https://github.com/nevgard/batikcakrabudaya",
   },
-  // Add more projects as needed
+
 ];
 
 const Projects = () => {
   return (
-    <section className="h-full project">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-10">
-          <div className="flex justify-center">
-            <Heading text="Projects" />
-          </div>
-          <p className="text-2xl md:text-4xl font-bold  ">
-            Check out some of my recent projects below.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-24">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="card bg-primary p-6 rounded-3xl flex flex-col justify-between"
-            >
-              <h3 className="text-2xl font-semibold text-gray-200 mb-4">
-                {project.title}
-              </h3>
-              <img
-                src={project.imageUrl}
-                alt="Project"
-                className="mb-4 aspect-video object-cover object-top rounded-xl"
-                height="400px"
-                width="100%"
-              />
-              <p className="text-sm text-gray-200">{project.description}</p>
-              <div className=" mt-4">
-                {project.githubUrl && (
-                  <div className="buttonCard w-fit rounded-xl bg-[#141517] px-4 py-2 flex justify-between items-center gap-x-3">
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm "
-                    >
-                      View GitHub
-                    </a>
-                    <FaGithub />
-                  </div>
-                )}
-                {project.liveUrl && (
-                  <div className="buttonCard w-fit rounded-xl bg-[#141517] px-4 py-2 flex justify-between items-center gap-x-3 mt-3">
-                    <a href={project.liveUrl} className="text-sm ">View Live</a>
-                    <FaGlobe className="ml-2" />
-                  </div>
-                )}
-              </div>
+
+    <section id="Projects" className=" h-full mt-12 ml-[780px] pl-24">
+      <h1 className="head1">FEATURED</h1>
+      <h1 className="head1 text-neutral-700 -mt-16"> PROJECTS</h1>
+      <div className="xl:grid grid-cols-2 gap-8 pr-6 mt-6">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="card bg-primary p-6 rounded-3xl flex flex-col justify-between"
+          >
+            <h3 className="text-2xl font-semibold text-gray-200 mb-4">
+              {project.title}
+            </h3>
+            <img 
+              src={project.imageUrl}
+              alt="Project"
+              className="mb-4 aspect-video object-cover object-top rounded-xl"
+              height="400px"
+              width="100%"
+            />
+            <p className="text-sm text-gray-200">{project.description}</p>
+            <div className=" mt-4">
+              {project.githubUrl && (
+                <div className="buttonCard group w-fit rounded-xl bg-[#141517] px-4 py-2 flex justify-between items-center gap-x-3 hover:text-lime-400 transition-all ease-in-out">
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm group-hover:text-lime-400 transition-all ease-in-out "
+                  >
+                    View GitHub
+                  </a>
+                  <FaGithub />
+                </div>
+              )}
+              {project.liveUrl && (
+                <div className="buttonCard group w-fit rounded-xl bg-[#141517] px-4 py-2 flex justify-between items-center gap-x-3 mt-3 hover:text-lime-400 transition-all ease-in-out">
+                  <a href={project.liveUrl} 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm group-hover:text-lime-400 transition-all ease-in-out">View Live</a>
+                  <FaGlobe className="ml-2" />
+                </div>
+              )}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </section>
+      </section>
   );
 };
 
