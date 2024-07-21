@@ -46,16 +46,16 @@ const projects = [
     imageUrl: "https://i.ibb.co.com/Wn8FmWG/cakrabudaya.png",
     githubUrl: "https://github.com/nevgard/batikcakrabudaya",
   },
-
 ];
 
 const Projects = () => {
   return (
-
-    <section id="Projects" className=" h-full mt-12 ml-[780px] pl-24">
-      <h1 className="head1">FEATURED</h1>
-      <h1 className="head1 text-neutral-700 -mt-16"> PROJECTS</h1>
-      <div className="xl:grid grid-cols-2 gap-8 pr-6 mt-6">
+    <section id="Projects" className=" md:h-full mt-12 md:ml-[780px] md:pl-24">
+      <div className="text-center md:text-start">
+        <h1 className="head1">FEATURED</h1>
+        <h1 className="head1 text-neutral-700 -mt-16"> PROJECTS</h1>
+      </div>
+      <div className="grid md:grid-cols-2 grid-cols-1 justify-center gap-8 px-6 md:px-0 md:pr-6 mt-6">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -64,7 +64,7 @@ const Projects = () => {
             <h3 className="text-2xl font-semibold text-gray-200 mb-4">
               {project.title}
             </h3>
-            <img 
+            <img
               src={project.imageUrl}
               alt="Project"
               className="mb-4 aspect-video object-cover object-top rounded-xl"
@@ -88,10 +88,14 @@ const Projects = () => {
               )}
               {project.liveUrl && (
                 <div className="buttonCard group w-fit rounded-xl bg-[#141517] px-4 py-2 flex justify-between items-center gap-x-3 mt-3 hover:text-lime-400 transition-all ease-in-out">
-                  <a href={project.liveUrl} 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm group-hover:text-lime-400 transition-all ease-in-out">View Live</a>
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm group-hover:text-lime-400 transition-all ease-in-out"
+                  >
+                    View Live
+                  </a>
                   <FaGlobe className="ml-2" />
                 </div>
               )}
@@ -99,7 +103,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      </section>
+    </section>
   );
 };
 

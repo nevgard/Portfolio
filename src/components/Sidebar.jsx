@@ -27,7 +27,7 @@ const Sidebar = () => {
     },
   ];
   return (
-    <div className="md:fixed md:top-0 left-0 h-full w-full md:w-[780px]  flex flex-col pt-12 px-6 items-end">
+    <div className="md:fixed md:top-0 md:left-0 h-full w-full md:w-[780px]  flex flex-col pt-12 px-6 items-end">
       <div className="bg-white md:w-1/2 rounded-xl p-12  flex flex-col items-center">
         <img
           src="src\assets\potrait.jpg"

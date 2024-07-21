@@ -7,10 +7,11 @@ import Contact from '../pages/Contact';
 
 const Layout = () => {
   return (
-    <div className="flex">
+    <div className="flex flex-col justify-center items-center md:items-start">
+      <Navbar />
       <Sidebar />
       <div className="">
-        <Navbar />
+        
         <main className="">
           <Outlet /> 
         </main>
