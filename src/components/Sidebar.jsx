@@ -32,6 +32,7 @@ const Sidebar = () => {
         <img
           src="https://i.ibb.co.com/XJ7tXwL/potrait.jpg"
           alt=""
+          loading="lazy"
           className="border h-80 w-full  object-cover object-top rounded-xl"
         />
           <h1 className="text-3xl font-bold text-black text-center mt-6">Fahmi Faza</h1>
