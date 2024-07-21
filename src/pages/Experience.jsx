@@ -1,5 +1,7 @@
 import React from "react";
 import { FaLocationArrow } from "react-icons/fa6";
+import TransitionPages from "../components/TransitionPages";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   const dataExperience = [
@@ -13,14 +15,32 @@ const Experience = () => {
     },
   ];
   return (
-      <section
-        id="Experience"
-        className="mt-12 md:h-screen md:ml-[780px] md:pl-24"
+    <section
+      id="Experience"
+      className="mt-12 md:h-screen md:ml-[780px] md:pl-24"
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        transition={{
+          duration: 0.5,
+        }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0 }}
       >
         <div className="text-center md:text-start">
           <h1 className="head1 ">1 YEARS OF</h1>
           <h1 className="head1 text-neutral-700 -mt-16"> EXPERIENCE</h1>
         </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        transition={{
+          duration: 0.5,
+          delay: 0.2,
+        }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0 }}
+      >
         <div className="mt-6 px-4 md:px-0">
           {dataExperience.map((experience) => (
             <div className="group rounded-2xl hover:bg-neutral-800 cursor-pointer w-fit px-6 py-4 flex">
@@ -47,7 +67,8 @@ const Experience = () => {
             </div>
           ))}
         </div>
-      </section>
+      </motion.div>
+    </section>
   );
 };
 

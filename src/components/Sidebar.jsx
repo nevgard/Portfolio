@@ -30,11 +30,12 @@ const Sidebar = () => {
     <div className="md:fixed md:top-0 md:left-0 h-full w-full md:w-[780px]  flex flex-col pt-12 px-6 items-end">
       <div className="bg-white md:w-1/2 rounded-xl p-12  flex flex-col items-center">
         <img
-          src="src\assets\potrait.jpg"
+          src="https://i.ibb.co.com/XJ7tXwL/potrait.jpg"
           alt=""
           className="border h-80 w-full  object-cover object-top rounded-xl"
         />
-        <div className="mt-24 flex flex-col justify-center">
+          <h1 className="text-3xl font-bold text-black text-center mt-6">Fahmi Faza</h1>
+        <div className="mt-4 flex flex-col justify-center">
           <span className="text-center text-black">
             A Front End Developer passionate about building exceptional user
             experiences.

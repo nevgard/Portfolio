@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import Layout from './fragment/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -11,8 +11,8 @@ import Experience from './pages/Experience';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <BrowserRouter >
+      <Routes >
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="Projects" element={<Projects />} />
