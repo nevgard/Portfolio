@@ -1,10 +1,11 @@
 import React from "react";
-import Heading from "../components/Heading";
-import ButtonPrimary from "../components/ButtonPrimary";
 
 const Hero = () => {
   return (
-    <section id="Home" className="hero md:h-screen mt-12 md:pl-24 md:ml-[780px]">
+    <section
+      id="Home"
+      className="hero md:h-screen mt-12 md:pl-24 md:ml-[780px]"
+    >
       <div className="text-center md:text-start">
         <h1 className="head1">FRONTEND</h1>
         <h1 className="head1 text-neutral-700 -mt-16">DEVELOPER</h1>
