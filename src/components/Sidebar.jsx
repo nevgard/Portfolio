@@ -1,7 +1,7 @@
 import React from "react";
 import {  FaGithub, FaInstagram, FaLinkedin, FaMailBulk, FaMailchimp, FaTwitter } from "react-icons/fa";
-import { CiMail } from "react-icons/ci";
 import { FiMail } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 const Sidebar = () => {
   const sosialMedia = [
@@ -28,7 +28,13 @@ const Sidebar = () => {
   ];
   return (
     <div className="md:fixed md:top-0 md:left-0 h-full w-full md:w-[780px]  flex flex-col pt-12 px-6 items-end">
-      <div className="bg-white md:w-1/2 rounded-xl p-12  flex flex-col items-center">
+      <motion.div
+      initial={{ opacity: 0, x: -200 }}
+      transition={{ duration: 0.7 }}
+      whileInView={{ opacity: 1, x: 0 }}
+
+      
+      className="bg-white md:w-1/2 rounded-xl p-12  flex flex-col items-center">
         <img
           src="https://i.ibb.co.com/XJ7tXwL/potrait.jpg"
           alt=""
@@ -51,7 +57,7 @@ const Sidebar = () => {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

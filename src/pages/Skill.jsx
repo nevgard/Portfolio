@@ -63,13 +63,27 @@ const Skill = () => {
       name: "Git",
     },
   ];
+  const fadeInAnimation = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: (index) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        delay: 0.1 * index,
+      },
+    }),
+  };
   return (
-    <section id="skill" className="md:h-screen mt-12 md:pl-24 md:ml-[780px]">
+    <section id="tools" className="md:h-screen mt-12 md:mt-0 md:pl-24 md:ml-[780px]">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.5 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: "all" }}
       >
         <div className="text-center md:text-start">
           <h1 className="head1">SKILL</h1>
@@ -78,12 +92,20 @@ const Skill = () => {
       </motion.div>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-y-3 gap-x-6 mt-6 mx-12">
         {dataSkill.map((skill, index) => (
+          <motion.div
+            variants={fadeInAnimation}
+            custom={index}
+            initial="initial"
+            whileInView="animate"
+            key={index}
+          >
           <div className="group hover:bg-neutral-400 transition-all ease-in-out cursor-pointer hover:border-white hover:scale-105 border-neutral-700 border flex items-center bg-neutral-700 px-4 py-3 rounded-xl gap-x-2">
             <div key={index} className="bg-white rounded-xl max-w-fit p-3">
               {skill.icon}
             </div>
             <span>{skill.name}</span>
           </div>
+          </motion.div>
         ))}
       </div>
     </section>

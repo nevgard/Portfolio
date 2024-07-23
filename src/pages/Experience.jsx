@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 import TransitionPages from "../components/TransitionPages";
 import { motion } from "framer-motion";
@@ -16,16 +16,14 @@ const Experience = () => {
   ];
   return (
     <section
-      id="Experience"
-      className="mt-12 md:h-screen md:ml-[780px] md:pl-24"
+      id="experience"
+      className="md:h-screen md:ml-[780px] md:pl-24 mt-12 md:mt-0"
     >
       <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        transition={{
-          duration: 0.5,
-        }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0 }}
+      initial={{ opacity: 0, y: 100 }}
+      transition={{ duration: 0.5 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: "all" }}
       >
         <div className="text-center md:text-start">
           <h1 className="head1 ">1 YEARS OF</h1>
@@ -38,12 +36,12 @@ const Experience = () => {
           duration: 0.5,
           delay: 0.2,
         }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: "all" }}
       >
         <div className="mt-6 px-4 md:px-0">
           {dataExperience.map((experience) => (
-            <div className="group rounded-2xl hover:bg-neutral-800 cursor-pointer w-fit px-6 py-4 flex">
+            <div key={experience.id} className="group rounded-2xl hover:bg-neutral-800 cursor-pointer w-fit px-6 py-4 flex">
               <div>
                 <h1 className="font-bold text-lg md:text-2xl">
                   {experience.company}

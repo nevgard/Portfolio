@@ -4,22 +4,17 @@ import Hero from "./Hero";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Skill from "./Skill";
+import ToTop from "../components/ToTop";
 
-import ScrollAnimation from "react-animate-on-scroll";
 const Home = () => {
   return (
     <section id="Home">
       <div className="">
         <Hero />
-        <ScrollAnimation animateIn="fadeIn" duration={1} animateOnce={true}>
-          <Experience />
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn" duration={1} animateOnce={true}>
-          <Projects />
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn" duration={1} animateOnce={true}>
-          <Skill />
-        </ScrollAnimation>
+        <Experience />
+        <Projects />
+        <Skill />
+        
       </div>
     </section>
   );

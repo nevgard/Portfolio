@@ -4,8 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body {
   font-family: "Poppins", sans-serif;
   color: #fff;
@@ -56,6 +54,10 @@ body {
 .jello-horizontal {
   -webkit-animation: jello-horizontal 0.9s both;
   animation: jello-horizontal 0.9s both;
+}
+
+.toTop {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 2px 2px 0px inset;
 }
 
 @-webkit-keyframes jello-horizontal {
@@ -256,7 +258,9 @@ color: #f7ca18;
 .buttonCard:active {
   animation: heartbeat 1.5s ease-in-out infinite both;
 }
-
+.toTop:active {
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
 
 @media (max-width: 600px) {
   .head1 {
