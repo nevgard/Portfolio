@@ -13,9 +13,9 @@ const Hero = () => {
         exit={{ opacity: 0 }}
       >
         <div className="text-center md:text-start">
-          <h1 className="head1">FRONTEND</h1>
-          <h1 className="head1 text-neutral-700 -mt-16">DEVELOPER</h1>
-          <p className="text-neutral-400 max-w-md -mt-4">
+          <h1 className="head1 text-black dark:text-white">FRONTEND</h1>
+          <h1 className="head1 text-black dark:text-neutral-700 -mt-16">DEVELOPER</h1>
+          <p className="dark:text-neutral-400 max-w-md -mt-4 text-black">
             Passionate about creating intuitive and engaging user experiences.
             Specialize in transforming ideas into beautifully crafted products.
           </p>
@@ -30,8 +30,8 @@ const Hero = () => {
           exit={{ opacity: 0 }}
           className=" text-center md:text-start"
         >
-          <h1 className="head1 text-lime-400 mr-2 md:mr-0">+1</h1>
-          <p className="text-neutral-400 md:base text-sm">
+          <h1 className="head1 text-black dark:text-lime-400 mr-2 md:mr-0">+1</h1>
+          <p className="text-black dark:text-neutral-400 md:base text-sm">
             Years of experience
           </p>
         </motion.div>
@@ -42,8 +42,8 @@ const Hero = () => {
           exit={{ opacity: 0 }}
           className=" text-center md:text-start"
         >
-          <h1 className="head1 text-lime-400 mr-2 md:mr-0">+8</h1>
-          <p className="text-neutral-400 md:text-base text-sm">
+          <h1 className="head1 text-black dark:text-lime-400 mr-2 md:mr-0">+8</h1>
+          <p className="text-black dark:text-neutral-400 md:text-base text-sm">
             Projects completed
           </p>
         </motion.div>

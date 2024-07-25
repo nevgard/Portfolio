@@ -26,8 +26,8 @@ const Experience = () => {
       viewport={{ once: true, amount: "all" }}
       >
         <div className="text-center md:text-start">
-          <h1 className="head1 ">1 YEARS OF</h1>
-          <h1 className="head1 text-neutral-700 -mt-16"> EXPERIENCE</h1>
+          <h1 className="head1 text-black dark:text-white ">1 YEARS OF</h1>
+          <h1 className="head1 text-black dark:text-neutral-700 -mt-16"> EXPERIENCE</h1>
         </div>
       </motion.div>
       <motion.div
@@ -41,18 +41,18 @@ const Experience = () => {
       >
         <div className="mt-6 px-4 md:px-0">
           {dataExperience.map((experience) => (
-            <div key={experience.id} className="group rounded-2xl hover:bg-neutral-800 cursor-pointer w-fit px-6 py-4 flex">
+            <div key={experience.id} className="group border-2 border-primary dark:border-0 rounded-2xl dark:hover:bg-neutral-800 cursor-pointer w-fit px-6 py-4 flex">
               <div>
-                <h1 className="font-bold text-lg md:text-2xl">
+                <h1 className="text-black font-bold text-lg md:text-2xl dark:text-white">
                   {experience.company}
                 </h1>
-                <h1 className="text-neutral-400 text-sm md:text-base">
+                <h1 className="text-black dark:text-neutral-400 text-sm md:text-base">
                   {experience.name}
                 </h1>
-                <p className="text-neutral-400 mt-2 text-sm md:text-base max-w-lg">
+                <p className="text-black dark:text-neutral-400 mt-2 text-sm md:text-base max-w-lg">
                   {experience.description}
                 </p>
-                <p className="text-neutral-400 mt-2 text-xs md:text-base">
+                <p className="text-black dark:text-neutral-400 mt-2 text-xs md:text-base">
                   {experience.date}
                 </p>
               </div>

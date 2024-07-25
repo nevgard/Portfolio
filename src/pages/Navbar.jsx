@@ -42,14 +42,14 @@ const Navbar = () => {
 
   return (
     <div className="md:pl-24 md:ml-[780px] mt-12">
-      <div className="bg-[#1C1A19] shadow-lg shadow-black/50 rounded-full flex gap-x-8 py-3 px-12 w-fit">
+      <div className="bg-white border-2 border-primary rounded-full flex gap-x-8 py-3 px-12 w-fit dark:bg-[#1C1A19] dark:border-0 dark:shadow-lg dark:shadow-black/50 ">
         {dataNav.map((item, index) => (
           <div key={index} className="flex justify-center items-center">
             <Link
               to={item.path}
-              className={`transition-all ease-in-out rounded-xl flex justify-center items-center p-2 ${
+              className={`transition-all ease-in-out rounded-xl flex justify-center items-center p-2 text-black dark:text-white ${
                 location.pathname === item.path.split("#")[0]
-                  ? "text-lime-400 bg-neutral-700"
+                  ? "dark:text-lime-400 text-white bg-neutral-700"
                   : ""
               }`}
             >

@@ -86,8 +86,8 @@ const Skill = () => {
         viewport={{ once: true, amount: "all" }}
       >
         <div className="text-center md:text-start">
-          <h1 className="head1">SKILL</h1>
-          <h1 className="head1 -mt-16 text-neutral-700">SET</h1>
+          <h1 className="head1 text-black dark:text-white ">SKILL</h1>
+          <h1 className="head1 -mt-16 text-black dark:text-neutral-700">SET</h1>
         </div>
       </motion.div>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-y-3 gap-x-6 mt-6 mx-12">
@@ -98,12 +98,13 @@ const Skill = () => {
             initial="initial"
             whileInView="animate"
             key={index}
+            viewport={{ once: true, amount: "all" }}
           >
-          <div className="group hover:bg-neutral-400 transition-all ease-in-out cursor-pointer hover:border-white hover:scale-105 border-neutral-700 border flex items-center bg-neutral-700 px-4 py-3 rounded-xl gap-x-2">
+          <div className="group  transition-all ease-in-out cursor-pointer border-neutral-700 border flex items-center bg-white dark:bg-neutral-700 px-4 py-3 rounded-xl gap-x-2 dark:hover:bg-neutral-400 dark:hover:border-white hover:scale-105">
             <div key={index} className="bg-white rounded-xl max-w-fit p-3">
               {skill.icon}
             </div>
-            <span>{skill.name}</span>
+            <span className="text-black dark:text-white">{skill.name}</span>
           </div>
           </motion.div>
         ))}

@@ -5,19 +5,22 @@ import Navbar from "../pages/Navbar";
 import { Outlet } from "react-router-dom";
 import Contact from "../pages/Contact";
 import ToTop from "../components/ToTop";
+import ThemeToggle from "../components/ThemeToggle";
 
 const Layout = () => {
   return (
-    <div className="flex flex-col justify-center items-center md:items-start">
+    <div className="dark:bg-[#141517] bg-white flex flex-col justify-center items-center md:items-start">
       <Navbar />
       <Sidebar />
       <ToTop/>
+   
       <div className="">
         <main className="">
           <Outlet />
         </main>
         <Contact />
       </div>
+      <ThemeToggle/>
     </div>
   );
 };

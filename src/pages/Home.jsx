@@ -14,7 +14,6 @@ const Home = () => {
         <Experience />
         <Projects />
         <Skill />
-        
       </div>
     </section>
   );
