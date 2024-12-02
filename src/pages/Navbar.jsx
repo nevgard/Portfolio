@@ -41,7 +41,7 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <div className="md:pl-24 md:ml-[780px] mt-12">
+    <div className="md:pl-24 md:ml-[40%] mt-12">
       <div className="bg-white border-2 border-primary rounded-full flex gap-x-8 py-3 px-12 w-fit dark:bg-[#1C1A19] dark:border-0 dark:shadow-lg dark:shadow-black/50 ">
         {dataNav.map((item, index) => (
           <div key={index} className="flex justify-center items-center">

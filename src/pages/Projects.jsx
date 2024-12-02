@@ -64,7 +64,7 @@ const fadeInAnimation = {
 
 const Projects = () => {
   return (
-    <section id="projects" className=" md:h-full mb-12 md:ml-[780px] md:pl-24 mt-12 md:mt-0">
+    <section id="projects" className=" md:h-full mb-12 md:ml-[40%] md:pl-24 mt-12 md:mt-0">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.5 }}

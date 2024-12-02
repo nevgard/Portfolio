@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section id="Home" className="hero md:h-screen md:pl-24 md:ml-[780px]">
+    <section id="Home" className="hero md:h-screen md:pl-24 md:ml-[40%]">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         transition={{

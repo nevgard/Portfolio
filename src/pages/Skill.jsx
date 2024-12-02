@@ -78,7 +78,7 @@ const Skill = () => {
     }),
   };
   return (
-    <section id="tools" className="md:h-screen mt-12 md:mt-0 md:pl-24 md:ml-[780px]">
+    <section id="tools" className="md:h-screen mt-12 md:mt-0 md:pl-24 md:ml-[40%]">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.5 }}

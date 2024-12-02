@@ -34,12 +34,12 @@ const Sidebar = () => {
     },
   ];
   return (
-    <div className="md:fixed md:top-0 md:left-0 h-full w-full md:w-[780px]  flex flex-col pt-12 px-6 items-end">
+    <div className="md:fixed md:top-0 md:left-0 h-full w-full md:w-[40%] flex flex-col pt-12 px-6 items-end">
       <motion.div
         initial={{ opacity: 0, x: -200 }}
         transition={{ duration: 0.7 }}
         whileInView={{ opacity: 1, x: 0 }}
-        className="bg-white md:w-1/2 rounded-xl p-12 flex flex-col items-center border-2 border-primary dark:border-0"
+        className="bg-white md:w-2/3 rounded-xl p-12 flex flex-col items-center border-2 border-primary dark:border-0"
       >
         <img
           src="https://i.ibb.co.com/XJ7tXwL/potrait.jpg"
