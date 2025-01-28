@@ -45,7 +45,7 @@ const Contact = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ amount: "some", once: true }}
       id="Contact"
-      className="md:h-max mb-28 md:ml-[40%] md:pl-24 mt-24 md:mt-0"
+      className="md:h-max pb-28 md:ml-[40%] md:pl-24 mt-24 md:mt-0"
     >
       <div className="text-center md:text-start">
         <h1 className="head1 text-black dark:text-white">LET'S WORK</h1>

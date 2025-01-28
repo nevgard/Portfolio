@@ -17,7 +17,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="md:h-screen md:ml-[40%] md:pl-24 mt-12 md:mt-0"
+      className=" md:h-full mb-1 md:ml-[40%] md:pl-24 mt-12 md:mt-0"
     >
       <motion.div
       initial={{ opacity: 0, y: 100 }}

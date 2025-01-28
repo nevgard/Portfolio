@@ -9,7 +9,7 @@ import ThemeToggle from "../components/ThemeToggle";
 
 const Layout = () => {
   return (
-    <div className="dark:bg-[#141517] bg-white flex flex-col justify-center items-center md:items-start">
+    <div className="dark:bg-[#141517] bg-white justify-center items-center md:items-start">
       <Navbar />
       <Sidebar />
       <ToTop/>
